@@ -73,7 +73,7 @@ public:
   }
 
   /** Copy constructor. */
-  NeighborhoodAllocator(const Self & other):m_ElementCount(0), m_Data(0)
+  NeighborhoodAllocator(const Self & other):m_ElementCount(0), m_Data(nullptr)
   {
     this->set_size(other.m_ElementCount);
     for ( unsigned int i = 0; i < other.m_ElementCount; ++i )
