@@ -28,8 +28,8 @@ template< typename TInputImage >
 ImageDuplicator< TInputImage >
 ::ImageDuplicator()
 {
-  m_InputImage = ITK_NULLPTR;
-  m_Output = ITK_NULLPTR;
+  m_InputImage = nullptr;
+  m_Output = nullptr;
   m_InternalImageTime = 0;
 }
 
