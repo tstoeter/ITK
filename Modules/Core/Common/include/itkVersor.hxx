@@ -417,7 +417,7 @@ Versor< T >
     std::abs( I[2][2] - itk::NumericTraits<T>::OneValue() ) > epsilonDiff ||
     vnl_det( I ) < 0 )
     {
-    itkGenericExceptionMacro(<< "The following matrix does not represent rotation to within an epsion of "
+    itkGenericExceptionMacro(<< "The following matrix does not represent rotation to within an epsilon of "
       << epsilon << "." << std::endl
       << m << std::endl
       << "det(m * m transpose) is: " << vnl_det(I) << std::endl
